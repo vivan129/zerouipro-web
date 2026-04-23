@@ -402,60 +402,42 @@ footer p { font-size:13px; color:var(--gray-3); }
   <div class="pricing-inner">
     <p class="section-label reveal">Pricing</p>
     <h2 class="section-title reveal">Download free.<br>Upgrade when ready.</h2>
-    <div class="reveal" style="display:flex;align-items:center;justify-content:center;gap:12px;margin:32px 0 48px;">
-      <span id="label-monthly" style="font-size:14px;font-weight:500;color:#0a0a0a;">Monthly</span>
-      <div id="toggle" onclick="toggleBilling()" style="width:44px;height:24px;background:#0a0a0a;border-radius:12px;position:relative;cursor:pointer;transition:background .2s;">
-        <div id="toggle-dot" style="width:18px;height:18px;background:#fff;border-radius:50%;position:absolute;top:3px;left:3px;transition:transform .2s;"></div>
-      </div>
-      <span id="label-yearly" style="font-size:14px;color:#999;">Yearly <span style="background:#E1F5EE;color:#0F6E56;font-size:11px;padding:2px 8px;border-radius:20px;font-weight:500;margin-left:4px;">Save 30%</span></span>
-    </div>
-    <div class="pricing-grid reveal">
+    <div class="pricing-grid reveal" style="grid-template-columns:1fr 1fr;max-width:780px;margin:40px auto 0;">
       <div class="plan">
-        <p class="plan-name">Free</p>
-        <p class="plan-price">$0</p>
-        <p class="plan-period">forever</p>
+        <p class="plan-name">Pro</p>
+        <p class="plan-price">$49</p>
+        <p class="plan-period">one time · 1 year access</p>
         <ul class="plan-features">
-          <li>5 voice commands</li>
-          <li>2 prebuilt macros</li>
-          <li>Basic intent matching</li>
-          <li>macOS 13+</li>
+          <li>500 commands/month</li>
+          <li>WhatsApp &amp; Telegram messaging</li>
+          <li>Spotify &amp; volume control</li>
+          <li>All prebuilt macros</li>
+          <li>AI intent engine</li>
+          <li>Priority support 24-48h</li>
         </ul>
-        <a href="https://github.com/vivan129/zerouipro-/releases/download/v0.1.0/ClickFree.AI_0.1.0_aarch64.dmg" class="plan-btn outline">Download free</a>
+        <a href="https://vivangpt.gumroad.com/l/ojevuu" target="_blank" class="plan-btn outline">Get Pro — $49</a>
+        <p style="font-size:11px;color:#999;text-align:center;margin-top:10px;">7-day money back guarantee</p>
       </div>
       <div class="plan featured">
-        <span class="plan-badge">Most popular</span>
-        <p class="plan-name">Pro</p>
-        <p class="plan-price" id="pro-price">$9</p>
-        <p class="plan-period" id="pro-period">per month · cancel anytime</p>
-        <ul class="plan-features">
-          <li>Unlimited commands</li>
-          <li>All macro packs</li>
-          <li>AI intent engine</li>
-          <li>Custom aliases</li>
-          <li>Priority support 24-48h</li>
-          <li>All future updates</li>
-        </ul>
-        <a href="https://vivangpt.gumroad.com/l/ojevuu" target="_blank" id="pro-btn" class="plan-btn">Get Pro</a>
-        <p style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;margin-top:10px;">7-day money back guarantee</p>
-      </div>
-      <div class="plan">
         <span class="plan-badge" style="background:#7F77DD;color:#fff;">Limited 100 seats</span>
         <p class="plan-name">Lifetime</p>
         <p class="plan-price">$149</p>
         <p class="plan-period">one time · yours forever</p>
         <ul class="plan-features">
-          <li>Everything in Pro</li>
-          <li>Lifetime updates</li>
+          <li>Unlimited commands forever</li>
+          <li>WhatsApp &amp; Telegram messaging</li>
+          <li>AI sees your screen — "fix this"</li>
+          <li>Spotify, volume &amp; brightness</li>
+          <li>All future features free</li>
           <li>Same-day support</li>
           <li>Shape the roadmap</li>
-          <li>Private Discord access</li>
-          <li>Early access to new features</li>
+          <li>Early access to everything new</li>
         </ul>
-        <a href="https://vivangpt.gumroad.com/l/aifop" target="_blank" class="plan-btn">Claim lifetime</a>
-        <p style="font-size:11px;color:#999;text-align:center;margin-top:10px;">7-day money back guarantee</p>
+        <a href="https://vivangpt.gumroad.com/l/aifop" target="_blank" class="plan-btn">Claim lifetime — $149</a>
+        <p style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;margin-top:10px;">7-day money back guarantee</p>
       </div>
     </div>
-    <p class="stripe-note">Secure payment via Lemon Squeezy · Cancel anytime · macOS 13+ · Built by Vivan Gupta</p>
+    <p class="stripe-note">Secure payment via Gumroad · macOS 13+ · Built by Vivan Gupta</p>
   </div>
 </div>
 <script>
