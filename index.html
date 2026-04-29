@@ -241,7 +241,7 @@ const observer=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.i
 document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
 function updateCountdown(){const saved=localStorage.getItem("saleEnd");const saleEnd=saved?new Date(saved):(()=>{const d=new Date();d.setDate(d.getDate()+61);localStorage.setItem("saleEnd",d.toISOString());return d})();function tick(){const diff=saleEnd-new Date();if(diff<=0)return;const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);document.querySelectorAll("#countdown-basic,#countdown-pro").forEach(el=>el.textContent=d+"d "+h+"h "+m+"m "+s+"s")}tick();setInterval(tick,1000)}
 updateCountdown();
-const DMG_URL="https://github.com/vivan129/zerouipro-/releases/download/v0.1.0/ClickFree%20AI_0.1.0_aarch64.dmg";
+const DMG_URL="https://github.com/vivan129/zerouipro-/releases/download/v0.1.0/ClickFree.AI_0.1.0_aarch64.dmg";
 function showInstallGuide(e){e.preventDefault();document.getElementById("install-guide").style.display="flex"}
 function closeModal(){document.getElementById("install-guide").style.display="none";window.location.href=DMG_URL}
 document.getElementById("install-guide").addEventListener("click",function(e){if(e.target===this)closeModal()});
